@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo apt update
 sudo apt install make autoconf automake libtool g++ python3-dev git libusbmuxd-dev libimobiledevice-dev libplist3 gcc libplist++-dev libplist-dev libcurl4-gnutls-dev libzip-dev libreadline-dev libusb-1.0-0-dev libirecovery-1.0-dev -y
 git clone https://github.com/tihmstar/libgeneral
 git clone https://github.com/tihmstar/libfragmentzip
