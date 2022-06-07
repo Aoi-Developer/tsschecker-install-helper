@@ -12,9 +12,9 @@ if [ "$(cat /etc/ld.so.conf | grep "/usr/local/lib" )" ] ;then
   echo "含みます"
 else
   echo "include /usr/local/lib" >> /etc/ld.so.conf
-  sudo ldconfig
   echo "ライブラリを読み込むための重要な設定を行いました"
 fi
+sudo ldconfig
 cd libplist
 ./autogen.sh
 make
