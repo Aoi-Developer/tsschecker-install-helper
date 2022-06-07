@@ -1,6 +1,7 @@
 # TSSChecker-install-helper
 
-依存関係を解決しつつTSSCheckerの最新版をビルドする雑なスクリプトです
+依存関係を解決しつつTSSCheckerの最新版をビルドする雑なスクリプトです  
+詳細はhttps://github.com/tihmstar/tsscheckerを確認してください
 
 # 対応OS
 
