@@ -14,7 +14,6 @@ else
   echo "include /usr/local/lib" >> /etc/ld.so.conf
   echo "ライブラリを読み込むための重要な設定を行いました"
 fi
-sudo ldconfig
 cd libplist
 ./autogen.sh
 make
@@ -51,6 +50,7 @@ make
 sudo make install
 cd ../
 sudo rm -r tsschecker libirecovery libimobiledevice-glue libfragmentzip libgeneral libplist
+sudo ldconfig
 which tsschecker >/dev/null 2>&1
 if [ $? -ne 0 ] ; then
   echo "何らかの問題が発生したためインストールが失敗しました。"
