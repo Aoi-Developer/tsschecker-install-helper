@@ -55,5 +55,6 @@ which tsschecker >/dev/null 2>&1
 if [ $? -ne 0 ] ; then
   echo "何らかの問題が発生したためインストールが失敗しました。"
 else
+  tsschecker
   echo "インストールが成功しました"
 fi
