@@ -1,6 +1,10 @@
 #!/bin/bash
 sudo apt update
 sudo apt install make autoconf automake libtool g++ python3-dev git libusbmuxd-dev libimobiledevice-dev libplist3 gcc libplist++-dev libplist-dev libcurl4-gnutls-dev libzip-dev libreadline-dev libusb-1.0-0-dev libirecovery-1.0-dev -y
+if [ $? -ne 0 ] ; then
+  echo "一部のパッケージインストールに失敗しました"
+  exit 1
+fi
 git clone https://github.com/tihmstar/libgeneral
 git clone https://github.com/tihmstar/libfragmentzip
 git clone https://github.com/libimobiledevice/libplist
